@@ -1,0 +1,143 @@
+
+body {
+  background-color: #132440;
+  margin: 0;
+  overflow-x: hidden;
+  position:relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url('http://assets.iceable.com/img/noise-transparent.png') repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.box {
+    height: 500px;
+    width: 500px;
+    background: #cd071e;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.info {
+    text-align: left;
+}
+
+h1 {
+    font-family: "Kirang Haerang";
+    font-size: 80px;
+    color: #FFE8DB;
+    width: 100%; 
+    margin-left: 25%;
+}
+
+
+.ComputerChoice {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 20px;
+    color: #FFE8DB;
+    font-family: "Barrio";
+}
+
+
+.YourChoice {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 20px;
+    color: #FFE8DB;
+    font-family: "Barrio";
+
+}
+
+
+.Result {
+    margin-left: 150px;
+    color: #3B9797;
+    font-family: "Barrio";
+}
+
+#rock{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background: #16476A;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    color: #FFE8DB;
+    cursor: pointer;
+    font-family: "Barrio";
+    font-size: 20px;
+}
+
+#paper{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background: #16476A;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    color: #FFE8DB;
+    cursor: pointer;
+    font-family: "Barrio";
+    font-size: 20px;
+}
+
+#scissors{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background: #16476A;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+    color: #FFE8DB;
+    cursor: pointer;
+    font-family: "Barrio";
+    font-size: 20px;
+    
+}
+
+.buttons{
+    display:flex;
+    justify-content: center;
+    margin-left: 9%;
+}
+
+
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
